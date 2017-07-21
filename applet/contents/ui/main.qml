@@ -307,7 +307,7 @@ Item {
                 currentTab = streamsTab;
             }
         }
-
+    }
         PlasmaComponents.ToolButton {
             Layout.alignment: Qt.AlignBottom
             tooltip: plasmoid.action("configure").text
