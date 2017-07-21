@@ -291,6 +291,21 @@ Item {
                 id: streamsTab
                 text: i18n("Applications")
             }
+        
+        onCurrentTabChanged: {
+            if (currentTab == devicesTab) {
+                plasmoid.configuration.activeTab = "devices";
+            } else {
+                plasmoid.configuration.activeTab = "streams";
+            }
+        }
+
+        Component.onCompleted: {
+            if (plasmoid.configuration.activeTab == "devices") {
+                currentTab = devicesTab;
+            } else {
+                currentTab = streamsTab;
+            }
         }
 
         PlasmaComponents.ToolButton {
