@@ -7,13 +7,16 @@
 
   <group name="General">
     <entry name="maximumVolume" type="Int">
-      <default>100</default>
+      <default>120</default>
     </entry>
     <entry name="volumeStep" type="Int">
-      <default>5</default>
+      <default>4</default>
     </entry>
     <entry name="volumeFeedback" type="Bool">
-      <default>true</default>
+      <default>false</default>
+    </entry>
+     <entry name="activeTab" type="String">
+      <default>applications</default>
     </entry>
   </group>
 
